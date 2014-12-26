@@ -1,0 +1,18 @@
+git init ———- create local repository
+
+git add <filename> or -—all === adds file to staging
+
+git commit -m === commits staged files to HEAD with message
+git commit -a -m === adds staged files and commits to HEAD with message
+git commit —-amend -m === amends staged files to last commit instead of creating a new commit, if a new message is added it will override the last commit message.
+
+git status === shows files that have been modified and haven’t been added to staging yet.
+
+git checkout —- <filename> === reset file to state of last commit
+
+git reset HEAD <filename> === removes file from stage
+
+git reset —-soft HEAD^ === removes last commit and places changes back into staging.
+git reset —-hard HEAD^ === removes last commit and all changes. (adding more “^” will determine how many commits back it will remove.)
+
+ 
